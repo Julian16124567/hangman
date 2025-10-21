@@ -85,7 +85,7 @@ void drawAscii(const vector<string>& AsciiArt, const GameState& g) {
     getmaxyx(stdscr, termHeight, termWidth);
     int artY = 2;
 
-    // Berechne, welches ASCII-Bild angezeigt wird
+    //calculate asii art
     int index = 6 - g.trys;
     if (index < 0) index = 0;
     if (index >= AsciiArt.size()) index = AsciiArt.size() - 1;
