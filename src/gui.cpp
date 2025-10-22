@@ -112,8 +112,9 @@ bool drawMain(GameState &g, std::vector<std::string> &guesses, const std::vector
     clear();
     int index = std::min(g.trys, (int)AsciiArt.size() - 1);
     drawAscii(AsciiArt, g);
-
-    mvprintw(11, 0, "Welcome %s", g.username.c_str());
+    
+    //username input not active
+    //mvprintw(11, 0, "Welcome %s", g.username.c_str());
     mvprintw(14, 0, "Word: %s", g.displayWord.c_str());
     mvprintw(15, 0, "Lives: %d", g.lives);
     mvprintw(16, 0, "Tries: %d", g.trys);
