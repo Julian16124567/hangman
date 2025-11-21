@@ -44,8 +44,6 @@ string ReturnWord() {
 
 
 //closing ncurses window
-/*change 'q' to a different button
-it could be used in hangman*/
 void closeWindow() {
     try {
         endwin();
