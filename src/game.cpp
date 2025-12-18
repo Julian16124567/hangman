@@ -35,7 +35,7 @@ string ReturnWord() {
     
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(0, words.size() - 1);
+    std::uniform_int_distribution<int> dis(0, words.size() - 1);
     int number = dis(gen);
     std::string finalword = words[number];
     file.close();
