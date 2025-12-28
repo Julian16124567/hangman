@@ -18,16 +18,10 @@ int main() {
     //get username
     //enterName(g);
     
-    //start gui
+    //start/draw gui
     try
     {    
         GuiInit();
-    } catch(const std::exception& e) {
-        writeError(e);
-    }
-    
-    //draw gui
-    try{
         DrawGui();
     } catch(const std::exception& e) {
         writeError(e);
